@@ -2,7 +2,7 @@
 relativeURLs = true
 languageCode = "en-us"
 title = "My Digital Garden"
-theme = "hugo-digital-garden-theme"
+# theme = "hugo-digital-garden-theme"
 copyright = "Nigalya Ponya ©"
 
 
