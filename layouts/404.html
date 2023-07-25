@@ -24,13 +24,20 @@
         <div class="row">
             <div class="col">
                 <div class="g-4 mb-5" data-masonry='{"percentPosition": true }'>
-                    {{ range ( where site.RegularPages "Section" "projects" | first 3 ) }}
-                    {{ partial "home_project.html" . }}
-                    {{end}}
+                    {{$p :=  where site.RegularPages "Section" "projects"}}
+                    {{$p = where $p "Params.status" "eq" "seeding" }}
+                        {{ range $p }}
+                            {{ partial "home_project.html" . }}  
+                        {{end}}
                 </div>
             </div>
             <div class="col">
               2 of 3
+               {{ range where site.RegularPages "Params.status" "eq" "seeding" }}
+                <div class="kanban-card">
+                    {{ partial "home_project.html" . }}  
+                </div>
+                {{ end }}
             </div>
             <div class="col">
               3 of 3
