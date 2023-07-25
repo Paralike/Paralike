@@ -8,14 +8,18 @@
         </div>
     </div> -->
     <div class="col-lg-12">
-        {{ with .Site.GetPage "section" "projects" }}
+        {{/*  {{ with .Site.GetPage "section" "projects" }}
         <div class="pb-4">
             <a class="heading fs-2" href="{{ .RelPermalink }}">{{ .Title }}</a>
         </div>          
         {{ if .Summary }} 
         <p class="subheading">{{ .Summary }}</p> 
         {{ end }}
-        {{ end }}
+        {{ end }}  */}}
+        <div class="pb-4">
+            <a class="heading fs-2">404: 😵 Ouch !</a>
+        </div>      
+        <p class="subheading">Maybe what you are looking for in not avaliable in the moment, but there is a chance I'm alrealy working on it.</p> 
         <!-- <div class="row row-cols-2 row-cols-md-3 g-4 mb-5" data-masonry='{"percentPosition": true }'>
             {{ range ( where site.RegularPages "Section" "projects" | first 6 ) }}
             {{ partial "home_project.html" . }}
