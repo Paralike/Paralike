@@ -23,25 +23,57 @@
         </div> -->
         <div class="row">
             <div class="col">
-                <div class="g-4 mb-5" data-masonry='{"percentPosition": true }'>
-                    {{$p :=  where site.RegularPages "Section" "projects"}}
-                    {{$p = where $p "Params.status" "eq" "seeding" }}
-                        {{ range $p }}
-                            {{ partial "home_project.html" . }}  
-                        {{end}}
+                <h3>Seeding projects</h3>
+                <div class="row mt-0 pt-0"></div>
+                    <div data-masonry='{"percentPosition": true }'>
+                        {{$p :=  where site.RegularPages "Section" "projects"}}
+                        {{$p = where $p "Params.status" "eq" "seeding" }}
+                            {{ range $p }}
+                                <div class="col py-2">
+                                    {{ partial "card_project.html" . }}  
+                                </div>
+                            {{end}}
                 </div>
             </div>
             <div class="col">
-              2 of 3
-               {{ range where site.RegularPages "Params.status" "eq" "seeding" }}
-                <div class="kanban-card">
-                    {{ partial "home_project.html" . }}  
+                <h3>Growing projects</h3>
+                <div class="row mt-0 pt-0">
+                    <div data-masonry='{"percentPosition": true }'>
+                        {{$p :=  where site.RegularPages "Section" "projects"}}
+                        {{$p = where $p "Params.status" "eq" "growing" }}
+                            {{ range $p }}
+                                <div class="col py-2">
+                                    {{ partial "card_project.html" . }}  
+                                </div>
+                            {{end}}
+                        {{/*  {{ range where site.RegularPages "Params.status" "eq" "seeding" }}
+                        <div class="col py-2">
+                            {{ partial "card_project.html" . }}  
+                        </div>
+                        {{ end }}  */}}
+                    </div>
                 </div>
-                {{ end }}
+                {{/*  <div class="g-4 mb-5" data-masonry='{"percentPosition": true }'>
+                    {{ range where site.RegularPages "Params.status" "eq" "seeding" }}
+                    <div class="kanban-card">
+                        {{ partial "card_project.html" . }}  
+                    </div>
+                    {{ end }}
+                </div>  */}}
             </div>
             <div class="col">
-              3 of 3
-            </div>
+            <h3>Evergreen projects</h3>
+                <div class="row mt-0 pt-0"></div>
+                    <div data-masonry='{"percentPosition": true }'>
+                        {{$p :=  where site.RegularPages "Section" "projects"}}
+                        {{$p = where $p "Params.status" "eq" "evergreen" }}
+                            {{ range $p }}
+                                <div class="col py-2">
+                                    {{ partial "card_project.html" . }}  
+                                </div>
+                            {{end}}
+                    </div>
+                </div>
           </div>
         {{ with .Site.GetPage "section" "projects" }}
         <div class="d-flex flex-row-reverse">
