@@ -8,8 +8,8 @@ copyright = "Nigalya Ponya ©"
 
 [params]
   name = "Adam Steiner"
-  description = "Red panda living in the eastern Himalayas."
-  initials = "NP"
+  description = "To create time so that everybody can do something they find meaningful"
+  initials = "AS"
   googleAnalytics = ""
 
   [[params.social]]
@@ -48,7 +48,7 @@ copyright = "Nigalya Ponya ©"
     weight = 3
   [[menu.main]]
     name = "About"
-    url = "/about/"
+    url = "/"
     weight = 4
 
 
