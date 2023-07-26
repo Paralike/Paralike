@@ -62,6 +62,7 @@ copyright = "Nigalya Ponya ©"
   project_tags = 'project_tags'
   library_tags = 'library_tags'
   education_tags = 'education_tags'
+  startdate = 'startdate'
 
 [markup]
   defaultMarkdownHandler = 'goldmark'

@@ -32,7 +32,7 @@
 		{{ end }}
 		<div class="row row-cols-1 g-4 mb-5">
 			{{ range ( where site.RegularPages "Section" "education" ) }}
-			{{ partial "home_garden.html" . }}
+			{{ partial "home_education.html" . }}
 			{{ end }}
 		</div>
 		{{ with .Site.GetPage "Section" "education" }}
