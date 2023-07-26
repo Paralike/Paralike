@@ -1,5 +1,5 @@
 ---
-title: "Library"
+title: "Awards"
 date: 2021-01-01
 summary: "Notes on some of the books I enjoyed reading"
 ---
