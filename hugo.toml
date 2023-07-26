@@ -1,4 +1,4 @@
-baseURL = 'https://paralike.github.io/Paralike/'
+baseURL = "https://paralike.github.io/Paralike/"
 #relativeURLs = true
 languageCode = "en-us"
 title = "My Digital Garden"
