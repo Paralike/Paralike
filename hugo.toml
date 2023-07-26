@@ -1,9 +1,9 @@
-# baseURL = 'https://paralike.github.io'
-relativeURLs = true
+baseURL = 'https://paralike.github.io'
+#relativeURLs = true
 languageCode = "en-us"
 title = "My Digital Garden"
 # theme = "hugo-digital-garden-theme"
-copyright = "Nigalya Ponya ©"
+copyright = "Adam Steiner"
 
 
 [params]
@@ -26,8 +26,8 @@ copyright = "Nigalya Ponya ©"
 
 [menu]
   [[menu.main]]
-    name = "Digital Garden"
-    url = "/garden/"
+    name = "About"
+    url = "/"
     weight = 1
   [[menu.main]]
     name = "Projects"
@@ -37,10 +37,7 @@ copyright = "Nigalya Ponya ©"
     name = "Library"
     url = "/library/"
     weight = 3
-  [[menu.main]]
-    name = "About"
-    url = "/"
-    weight = 4
+
 
 
 [taxonomies]
@@ -48,7 +45,6 @@ copyright = "Nigalya Ponya ©"
   project_tags = 'project_tags'
   library_tags = 'library_tags'
   education_tags = 'education_tags'
-  startdate = 'startdate'
 
 [markup]
   defaultMarkdownHandler = 'goldmark'
