@@ -1,9 +1,9 @@
-# baseURL = 'https://paralike.github.io'
-relativeURLs = true
+baseURL = 'https://paralike.github.io'
+#relativeURLs = true
 languageCode = "en-us"
 title = "My Digital Garden"
 # theme = "hugo-digital-garden-theme"
-copyright = "Nigalya Ponya ©"
+copyright = "Adam Steiner"
 
 
 [params]
@@ -14,30 +14,20 @@ copyright = "Nigalya Ponya ©"
   googleAnalytics = ""
 
   [[params.social]]
-    name = "Twitter"
-    link = "#"
-    icon = "fab fa-twitter"
-
-  [[params.social]]
     name = "Github"
-    link = "#"
+    link = "https://github.com/Paralike"
     icon = "fab fa-github"
 
   [[params.social]]
-    name = "Medium" 
-    link = "#"
-    icon = "fab fa-medium-m"
-
-  [[params.social]]
     name = "LinkedIn"
-    link = "#"
+    link = "https://www.linkedin.com/in/adam-steiner-4453381a3/"
     icon = "fab fa-linkedin-in"
 
 
 [menu]
   [[menu.main]]
-    name = "Digital Garden"
-    url = "/garden/"
+    name = "About"
+    url = "/"
     weight = 1
   [[menu.main]]
     name = "Projects"
@@ -47,14 +37,7 @@ copyright = "Nigalya Ponya ©"
     name = "Library"
     url = "/library/"
     weight = 3
-  [[menu.main]]
-    name = "About"
-    url = "/"
-    weight = 4
-  [[menu.main]]
-    name = "Education"
-    url = "/education/"
-    weight = 4
+
 
 
 [taxonomies]

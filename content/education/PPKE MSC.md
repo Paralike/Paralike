@@ -1,7 +1,9 @@
 ---
-title: "Taxually"
-date: 2019-01-01
+title: "PPKE MSC"
+date: 2019-02-01
 lastmod: 2019-03-17
+startdate: 2020-01-01
+enddate: 2020-01-01
 draft: false
 education_tags: ["fur", "cleaning"]
 summary: " "
