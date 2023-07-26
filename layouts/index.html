@@ -20,7 +20,21 @@
 </div>
 
 <!-- Experience -->
-
+<div class="container py-3">
+	{{ with .Site.GetPage "Section" "experience" }}
+	<div class="pb-4">
+		<a class="heading fs-2" href="{{ .RelPermalink }}">{{ .Title }}</a>
+	</div>      
+	{{ if .Summary }} <p class="subheading">{{ .Summary }}</p> {{ end }}
+	{{ end }}
+	<div class="row row-cols-1 g-4 mb-5">
+		{{ range ( where site.RegularPages "Section" "experience" ) }}
+		{{ partial "home_experience.html" . }}
+		{{ end }}
+	</div>
+	{{ with .Site.GetPage "Section" "experience" }}
+	{{ end }}
+</div>
 
 <!-- Education -->
 <div class="container py-3">
