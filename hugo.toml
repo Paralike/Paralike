@@ -8,7 +8,7 @@ copyright = "Adam Steiner"
 
 [params]
   name = "Adam Steiner"
-  description = "To create time so that everybody can do something they find meaningful"
+  description = "To create time so that everybody can do what's meaningful"
   initials = "AS"
   profile_picture = "/Paralike/index/featured.jpg"
   googleAnalytics = ""
@@ -34,8 +34,8 @@ copyright = "Adam Steiner"
     url = "/projects/"
     weight = 2
   [[menu.main]]
-    name = "Library"
-    url = "/library/"
+    name = "Digital Garden"
+    url = "/garden/"
     weight = 3
 
 
