@@ -51,13 +51,17 @@ copyright = "Nigalya Ponya ©"
     name = "About"
     url = "/"
     weight = 4
+  [[menu.main]]
+    name = "Education"
+    url = "/education/"
+    weight = 4
 
 
 [taxonomies]
   garden_tags = 'garden_tags'
   project_tags = 'project_tags'
   library_tags = 'library_tags'
-
+  education_tags = 'education_tags'
 
 [markup]
   defaultMarkdownHandler = 'goldmark'
