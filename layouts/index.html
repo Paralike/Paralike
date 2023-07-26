@@ -1,14 +1,42 @@
 {{ define "main" }}
 
-<div class="mt-5 pt-5 pb-1">
-    <div class="container" >
-       	<h1 class="name display-1"><b>{{ .Site.Params.Name }}</b></h1>
-    </div>
+<!-- About -->
+<div class="container">
+	<div class="row justify-content-between" >
+		<div class="col-md-6">
+			<div class="mt-5 pt-5 pb-1">
+				<h1 class="name display-1"><b>{{ .Site.Params.Name }}</b></h1>
+			</div>
+			<div class="mb-5 py-4">
+				<h2 class="bio lh-base fs-1 serif">{{ .Site.Params.Description }}</h2>
+			</div>
+		</div>
+		<div class="col-md-4 mx-auto">
+			<div class="py-2">
+				<img src="{{ .Site.Params.profile_picture }}" class = "img-fluid  img-thumbnail"  alt="{{ .Site.Params.profile_picture }}">
+			</div>
+		</div>
+	</div>
 </div>
-<div class="mb-5 py-4">
-    <div class="container">
-        <h2 class="bio lh-base fs-1 serif">{{ .Site.Params.Description }}</h2>
-    </div>
+
+<!-- Experience -->
+
+
+<!-- Education -->
+<div class="container py-3">
+		{{ with .Site.GetPage "Section" "education" }}
+		<div class="pb-4">
+			<a class="heading fs-2" href="{{ .RelPermalink }}">{{ .Title }}</a>
+		</div>      
+		{{ if .Summary }} <p class="subheading">{{ .Summary }}</p> {{ end }}
+		{{ end }}
+		<div class="row row-cols-1 g-4 mb-5">
+			{{ range ( where site.RegularPages "Section" "education" ) }}
+			{{ partial "home_garden.html" . }}
+			{{ end }}
+		</div>
+		{{ with .Site.GetPage "Section" "education" }}
+		{{ end }}
 </div>
 
 <div class="container py-3">
