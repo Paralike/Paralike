@@ -1,11 +1,11 @@
 ---
 title: "Skill 1"
-date: 2019-01-01
-lastmod: 2021-08-12
+#date: 2019-01-01
+#lastmod: 2021-08-12
 draft: false
-garden_tags: ["bamboo", "food"]
+#garden_tags: ["bamboo", "food"]
 summary: " "
-status: "seeding"
+#status: "seeding"
 ---
 
 We all eat a large amount of bamboo shoots, from 2 to 4kg of leaves daily. That's a lot of leaves !! 

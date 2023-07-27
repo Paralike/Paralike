@@ -1,5 +1,5 @@
 ---
 title: "Skills"
 date: 2021-01-01
-summary: "A collection of thoughts and articles at different development stages"
+summary: "A collection of skill I think might help you as well"
 ---
