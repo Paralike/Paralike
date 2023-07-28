@@ -2,7 +2,7 @@
 title: "Skill 1"
 #date: 2019-01-01
 #lastmod: 2021-08-12
-draft: false
+draft: true
 #garden_tags: ["bamboo", "food"]
 summary: " "
 #status: "seeding"
