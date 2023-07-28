@@ -2,7 +2,7 @@
 title: "Fuji Takes a Walk"
 author: "Janell Rosener"
 date: 2021-01-01
-draft: false
+draft: true
 summary: " "
 library_tags: ["red-panda", "kids"]
 imgonly: true
