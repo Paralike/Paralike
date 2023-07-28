@@ -12,7 +12,7 @@ position: "Software Developer Intern"
 ---
 ## My tasks were:
 
-⦁	Developed, tested, and deployed server-side code of the web applications in .NET.
-⦁	Creating automated deployment processes (CI/CD) in Microsoft Azure cloud platform to help the work of the developers.
-⦁	Containerize applications to docker. 
-⦁	Working 2 weeks sprints. 
+- Developed, tested, and deployed server-side code of the web applications in .NET.
+- Creating automated deployment processes (CI/CD) in Microsoft Azure cloud platform to help the work of the developers.
+- Containerize applications to docker. 
+- Working 2 weeks sprints. 
