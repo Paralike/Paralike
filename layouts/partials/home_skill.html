@@ -6,14 +6,14 @@
                     <h5 class="card-title">{{ .Title }}</h5>
                     <!-- <p class="card-text">{{ .Summary }}</p> -->
                 </div>
-                <div class="col-4 ">
+                {{/*  <div class="col-4 ">
                     <p class="card-right">
-                        <span class="card-date">{{ dateFormat  "Jan 2, 2006" .Params.startdate }} - {{ dateFormat  "Jan 2, 2006" .Params.enddate }} </span> 
-                        {{/*  <br/>{{ partial "status.html" . }}  */}}
+                        <span class="card-date">{{ .Lastmod.Format "Jan 2, 2006" }} </span>
+                        <br/>{{ partial "status.html" . }}
                     </p>
-                </div>
+                </div>  */}}
             </div>
-            <a href="{{ .Permalink }}" class="stretched-link"></a>
+            {{/*  <a href="{{ .Permalink }}" class="stretched-link"></a>  */}}
         </div>
     </div>   
 </div>   
