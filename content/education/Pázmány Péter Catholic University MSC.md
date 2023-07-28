@@ -1,5 +1,5 @@
 ---
-title: "Pázmány Péter Catholic University BSC"
+title: "Pázmány Péter Catholic University MSC"
 date: 2021-02-10
 lastmod: 2021-01-31
 startdate: 2021-01-31
