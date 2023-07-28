@@ -1,7 +1,7 @@
 ---
 title: "Pázmány Péter Catholic University MSC"
 date: 2021-02-10
-lastmod: 2021-01-31
+lastmod: 2023-03-31
 startdate: 2021-01-31
 enddate: 2023-02-28
 draft: false
