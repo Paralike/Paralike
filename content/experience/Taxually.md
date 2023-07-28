@@ -3,7 +3,7 @@ title: "Taxually"
 date: 2023-07-26
 lastmod: 2023-07-27
 startdate: 2022-07-01
-enddate: 2022-07-10
+# enddate: 2022-07-10
 draft: false
 experience_tags: ["fur", "cleaning"]
 summary: " "
