@@ -6,7 +6,7 @@ startdate: 2020-06-27
 enddate: 2020-10-30
 draft: false
 experience_tags: ["fur", "cleaning"]
-summary: " "
+summary: "In this role, My tasks involved developing, testing, and deploying server-side code for web applications in .NET, creating automated deployment processes in Microsoft Azure cloud platform, and containerizing applications using Docker, all while following a 2-week sprint cycle."
 status: "evergreen"
 position: "Software Developer Intern"
 ---

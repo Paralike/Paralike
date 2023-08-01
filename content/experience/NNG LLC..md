@@ -6,7 +6,7 @@ startdate: 2021-06-25
 enddate: 2022-07-10
 draft: false
 experience_tags: ["fur", "cleaning"]
-summary: " "
+summary: "In this role, My responsibilities included automatizing work for Legal, Marketing, Sales, and IT teams using VBA and Python, analyzing data, creating customized reports, and optimizing processes. I also documented code and processes in Confluence and Jira. My successes involved defining and building business needs for ETL and SQL cube processes, resulting in valuable reference points for retrieving information and predicting device lifetime using regression."
 status: "evergreen"
 position: "Data Scientist Trainee"
 ---

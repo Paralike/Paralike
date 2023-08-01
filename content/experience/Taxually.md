@@ -6,7 +6,7 @@ startdate: 2022-07-01
 # enddate: 2022-07-10
 draft: false
 experience_tags: ["fur", "cleaning"]
-summary: " "
+summary: " In this role, I am responsible for building operational and monitoring tools, collaborating with developers to fix technical issues, maintaining the ticketing system, and automatizing operational processes. Additionally, I assist the Security team in preparing for audits, support newly joined colleagues, write documentations, and build prototype software for incubator projects. My successes include leading the implementation of the ticketing system, reducing response and lead times, automatizing workflows for new products, and visualizing essential metrics."
 status: "evergreen"
 position: "Digital Operations Engineer"
 ---
