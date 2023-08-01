@@ -11,10 +11,11 @@
                     <p class="card-right">
                         <span class="card-date">{{ dateFormat  "Jan 2, 2006" .Params.startdate }} - {{ if .Params.enddate }} {{ dateFormat  "Jan 2, 2006" .Params.enddate }} {{ end }} </span> 
                         {{/*  <br/>{{ partial "status.html" . }}  */}}
+                        <br/><a href="{{ .Permalink }}" role="button" class="btn btn-sm see-all" >See more</a>
                     </p>
                 </div>
             </div>
-            <a href="{{ .Permalink }}" class="stretched-link"></a>
+            
         </div>
     </div>   
 </div>   
