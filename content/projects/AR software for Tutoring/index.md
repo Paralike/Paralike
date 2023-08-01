@@ -4,9 +4,9 @@ date: 2020-05-01
 lastmod: 2023-08-01
 draft: false
 project_tags: [""]
-status: "seed"
+status: "seeding"
 weight: 2
-summary: "Emotion recognition"
+summary: "AR software for tutoring"
 links:
     external_link:
         text: "Github link (In Hungarian)"

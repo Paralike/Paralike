@@ -4,7 +4,7 @@ date: 2020-05-01
 lastmod: 2023-08-01
 draft: false
 project_tags: [""]
-status: "seed"
+status: "seeding"
 weight: 2
 summary: "Emotion recognition"
 links:
