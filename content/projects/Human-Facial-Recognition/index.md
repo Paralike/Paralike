@@ -1,7 +1,7 @@
 ---
 title: "Human Facial Recognition"
 date: 2020-05-01
-lastmod: 2023-08-02
+lastmod: 2023-08-03
 draft: false
 project_tags: [""]
 status: "growing"
@@ -36,3 +36,7 @@ Following this, optimizing memory usage became a central issue, and the transfor
 However, I encountered another issue as the learning algorithm refused to learn properly. Despite training for 10 epochs, there was no improvement in learning accuracy after the first epoch. I found a possible solution to this problem in the following article [6], which led me to assume that the images with different appearances might be causing the issue.
 
 As visible in the comparison, the first image shows a much closer view of the face than the second one. Consequently, the feature maps were unable to learn distinct facial expressions. To test this hypothesis, I removed the JAFFE dataset from the training set.
+
+## Residual-based architecture
+### ResNet50
+After the successful VGG network, I had the assumption that newer models would be better equipped for classification, being faster and more accurate. As a result, I started testing the capabilities of ResNet [7]. However, instead of writing the entire network from scratch, I downloaded an existing code for testing, as I was unsure if my computer's specifications would be sufficient for running it [8]. It quickly became evident that running ResNet with its 23 million parameters exceeded the capacity available to me.
