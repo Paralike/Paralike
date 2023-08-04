@@ -38,5 +38,10 @@ However, I encountered another issue as the learning algorithm refused to learn 
 As visible in the comparison, the first image shows a much closer view of the face than the second one. Consequently, the feature maps were unable to learn distinct facial expressions. To test this hypothesis, I removed the JAFFE dataset from the training set.
 
 ## Residual-based architecture
+
 ### ResNet50
 After the successful VGG network, I had the assumption that newer models would be better equipped for classification, being faster and more accurate. As a result, I started testing the capabilities of ResNet [7]. However, instead of writing the entire network from scratch, I downloaded an existing code for testing, as I was unsure if my computer's specifications would be sufficient for running it [8]. It quickly became evident that running ResNet with its 23 million parameters exceeded the capacity available to me.
+
+### MobileNet-based architecture
+As reducing the parameters of Residual networks proved to be much more challenging than reducing those of a VGG network, I was unable to find a solution despite various attempts. Therefore, in order to compare my VGG network with other networks, I turned towards models with significantly lower memory requirements [1].
+
