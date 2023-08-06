@@ -1,7 +1,7 @@
 ---
 title: "Human Facial Recognition"
 date: 2020-05-01
-lastmod: 2023-08-03
+lastmod: 2023-08-06
 draft: false
 project_tags: [""]
 status: "growing"
@@ -45,3 +45,5 @@ After the successful VGG network, I had the assumption that newer models would b
 ### MobileNet-based architecture
 As reducing the parameters of Residual networks proved to be much more challenging than reducing those of a VGG network, I was unable to find a solution despite various attempts. Therefore, in order to compare my VGG network with other networks, I turned towards models with significantly lower memory requirements [1].
 
+### MobileNetV2
+As a result, I chose MobileNetV2 [9], thinking that since it was designed for mobile phones, my system would be capable of handling it. With this hope, I downloaded a test code to see if it would run properly [10]. Once I confirmed that my system was capable of running the code, I began implementing my own version of MobileNet, based on the original research paper [9]. Since I hadn't had the opportunity to implement code from an original research paper before, this posed the biggest challenge for me. Here, I first familiarized myself with the concepts of Depthwise and Pointwise convolution, for which I used the following sources to fully understand: [11][12][13][14]. Using these, I was able to construct the basic structure of MobileNet, which consists of inverted residual blocks with a convolution at the beginning and end. However, the code was unable to run. The problem was exacerbated by the fact that the error did not consistently occur during execution. Unfortunately, I couldn't understand it on my own, so I was only able to figure out with the help of external code that the issue was with the initial filter and that it couldn't always be divided by zero. With the assistance of this code, I managed to write this function in a way that made my code work [15]. The code not only helped me understand the first reshaping operation, but also the last one, as its absence consistently caused size-related errors in the program. Once I had made my program functional, testing could commence. This test ran with the same parameters and data augmentation processes as before.
