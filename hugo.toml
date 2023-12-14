@@ -1,4 +1,5 @@
-baseURL = "https://paralike.github.io/Paralike/"
+#baseURL = "https://paralike.github.io/Paralike/"
+baseURL = "https://adamsteiner.me"
 #relativeURLs = true
 languageCode = "en-us"
 title = "My Peaceful Place"
