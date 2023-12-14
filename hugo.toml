@@ -10,7 +10,7 @@ copyright = "Adam Steiner"
   name = "Adam Steiner"
   description = "To create time so that everybody can do they find meaningful."
   initials = "AS"
-  profile_picture = "/Paralike/index/featured.jpg"
+  profile_picture = "/index/featured.jpg"
   googleAnalytics = ""
 
   [[params.social]]
