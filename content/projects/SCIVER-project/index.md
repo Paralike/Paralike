@@ -1,12 +1,12 @@
 ---
-title: "SCIVER"
+title: "SCIVER Scientific claim verification"
 date: 2021-06-07
 lastmod: 2023-08-01
 draft: false
 project_tags: [""]
 status: "evergreen"
 weight: 1
-summary: "Scientific claims verification"
+summary: "Scientific claims verification with Natural Language Processing"
 links:
     external_link:
         text: "Github link (In Hungarian)"
