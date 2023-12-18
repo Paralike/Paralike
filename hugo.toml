@@ -34,10 +34,10 @@ copyright = "Adam Steiner"
     name = "Projects"
     url = "/projects/"
     weight = 2
-#  [[menu.main]]
-#    name = "Digital Garden"
-#    url = "/garden/"
-#    weight = 3
+  [[menu.main]]
+    name = "Trainings"
+    url = "/trainings/"
+    weight = 3
 
 
 
