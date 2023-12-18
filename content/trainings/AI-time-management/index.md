@@ -27,7 +27,7 @@ Life is unpredictable, and plans often need to be adjusted on the fly. AI excels
 
 AI scheduling systems are not just about time management; they also contribute to smart decision-making. By providing data-driven insights, these tools empower users to make informed choices about how to allocate their time. This can lead to better work-life balance, improved productivity, and reduced stress levels.
 
-## Hands-On Example: Time Management with ChatGPT
+## Hands-On Example: Time Management with H2O
 
 To illustrate the practical application of AI in time management, let's consider a hands-on example using ChatGPT. Imagine you have a hectic day ahead, filled with work tasks, personal commitments, and a need for some relaxation. Instead of manually planning your day, you decide to enlist the help of ChatGPT to streamline the process.
 
