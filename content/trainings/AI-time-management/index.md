@@ -29,7 +29,7 @@ AI scheduling systems are not just about time management; they also contribute t
 
 ## Hands-On Example: Time Management with H2O.ai
 
-To illustrate the practical application of AI in time management, let's consider a hands-on example using ChatGPT. Imagine you have a hectic day ahead, filled with work tasks, personal commitments, and a need for some relaxation. Instead of manually planning your day, you decide to enlist the help of ChatGPT to streamline the process.
+To illustrate the practical application of AI in time management, let's consider a hands-on example using H2O. Imagine you have a hectic day ahead, filled with work tasks, personal commitments, and a need for some relaxation. Instead of manually planning your day, you decide to enlist the help of H2O to streamline the process.
 
 1. **Go to out Website** 
     Visit our website at [Visit our AI's Website](http://51.124.42.42:7860/)
@@ -120,7 +120,7 @@ To illustrate the practical application of AI in time management, let's consider
    ```
 
 4. **Seeking Clarifications:**
-   If you need further clarification or want to make adjustments, engage in a back-and-forth conversation with ChatGPT:
+   If you need further clarification or want to make adjustments, engage in a back-and-forth conversation with H2O:
 
    ```markdown
    You: What about my morning routine? I usually start with a cup of coffee and reviewing emails.
