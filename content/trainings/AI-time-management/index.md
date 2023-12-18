@@ -1,5 +1,5 @@
 ---
-title: "The AI Revolution: How Artificial Intelligence Can Optimize Your Daily Schedule"
+title: "How Artificial Intelligence Can Optimize Your Daily Schedule"
 date: 2023-12-18
 lastmod: 2023-12-18
 draft: false
