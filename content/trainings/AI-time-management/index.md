@@ -3,8 +3,8 @@ title: "How Artificial Intelligence Can Optimize Your Daily Schedule"
 date: 2023-12-18
 lastmod: 2023-12-18
 draft: false
-garden_tags: ["ChatGPT"]
-summary: " "
+training_tags: ["GPT"]
+summary: ""
 status: "growing"
 ---
 # Introduction
