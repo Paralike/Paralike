@@ -25,6 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.114.1
+
     steps:
       - name: Install Hugo CLI
         run: |
@@ -39,6 +40,14 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+
+      # 👇 Force GitHub to use actions/upload-artifact@v4 to avoid deprecation error
+      - name: Override deprecated upload-artifact version
+        uses: actions/upload-artifact@v4
+        with:
+          name: noop
+          path: README.md
+          if-no-files-found: ignore
 
       - name: Setup GitHub Pages
         id: pages
@@ -69,6 +78,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
