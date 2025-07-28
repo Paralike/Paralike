@@ -1,6 +1,6 @@
 ---
 title: "AI Developer"
-date: 2025-07-28
+date: 2025-07-26
 lastmod: 2025-07-26
 startdate: 2025-01-01
 enddate: 2025-07-13
