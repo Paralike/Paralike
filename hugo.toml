@@ -4,7 +4,7 @@ baseURL = "https://adamsteiner.me"
 languageCode = "en-us"
 title = "My Peaceful Place"
 # theme = "hugo-digital-garden-theme"
-copyright = "Adam Steinerr"
+copyright = "Adam Steiner"
 
 
 [params]
