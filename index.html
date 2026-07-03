@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Case File — Adam Steiner — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@500;700&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="intro" id="intro" aria-hidden="true">
+    <p class="intro-line">OPENING CASE FILE…</p>
+    <p class="intro-line intro-title">PORTFOLIO OF ADAM STEINER</p>
+    <p class="intro-line intro-sub">The Data Detective</p>
+  </div>
+
+  <!-- ============ INTRO REEL (cinematic camera sweep through the evidence) ============ -->
+  <div class="reel-bar reel-bar--top" aria-hidden="true"></div>
+  <div class="reel-bar reel-bar--bottom" aria-hidden="true"></div>
+  <div class="reel-vignette" aria-hidden="true"></div>
+  <div class="reel-scanlines" aria-hidden="true"></div>
+  <div class="reel-hud" id="reelHud" aria-hidden="true">
+    <span class="reel-rec"><span class="reel-dot"></span>REC</span>
+    <span class="reel-timecode" id="reelTimecode">00:00:00</span>
+    <span class="reel-caption" id="reelCaption"></span>
+  </div>
+
+  <header class="topbar">
+    <div class="case-id">
+      <span class="case-id-label">CASE&nbsp;FILE&nbsp;NO.</span>
+      <span class="case-id-num">2026‑0614</span>
+    </div>
+    <nav class="evidence-tabs" id="evidenceTabs" aria-label="Board sections">
+      <button data-target="bio">Bio</button>
+      <button data-target="experience">Experience</button>
+      <button data-target="projects">Projects</button>
+      <button data-target="education">Education</button>
+      <button data-target="arsenal">Highlights</button>
+      <button data-target="recommendations">Witnesses</button>
+      <button data-target="contact">Contact</button>
+    </nav>
+    <button class="board-btn" id="zoomOutBtn" title="View the whole board">
+      <span class="board-btn-icon">🔍</span><span class="board-btn-text">Full board</span>
+    </button>
+    <button class="board-btn" id="replayReelBtn" title="Replay the intro camera sweep">
+      <span class="board-btn-icon">▶</span>
+    </button>
+    <button class="board-btn board-btn--detective" id="detectiveSenseBtn" title="Toggle Detective Sense — highlight named entities" aria-pressed="false">
+      <span class="board-btn-icon">🕵️</span><span class="board-btn-text">Detective Sense</span>
+    </button>
+  </header>
+
+  <div class="ner-legend" id="nerLegend" aria-hidden="true">
+    <p class="ner-legend-title">🕵️ Detective Sense</p>
+    <div class="ner-legend-row"><span class="ner-swatch ner-swatch--company"></span>Organisation</div>
+    <div class="ner-legend-row"><span class="ner-swatch ner-swatch--tech"></span>Technology</div>
+    <div class="ner-legend-row"><span class="ner-swatch ner-swatch--date"></span>Date</div>
+    <div class="ner-legend-row"><span class="ner-swatch ner-swatch--result"></span>Result / Metric</div>
+  </div>
+
+  <main class="viewport" id="viewport">
+    <div class="board" id="board">
+
+      <!-- ============ BIO ============ -->
+      <section class="cluster cluster--bio" id="bio" data-x="1540" data-y="740" data-w="620" data-h="560">
+        <h2 class="cluster-label">Subject Profile</h2>
+
+        <div class="bio-id-row">
+          <div class="card card--photo pinned" id="card-bio-photo" data-pin-color="gold">
+            <div class="id-photo" aria-hidden="true">
+              <svg viewBox="0 0 100 120" class="silhouette">
+                <rect width="100" height="120" fill="#cfc6b0"/>
+                <circle cx="50" cy="44" r="22" fill="#9a8a6e"/>
+                <path d="M10 120 C10 88 30 76 50 76 C70 76 90 88 90 120 Z" fill="#9a8a6e"/>
+              </svg>
+              <span class="id-photo-tag">ID&nbsp;PHOTO</span>
+            </div>
+          </div>
+
+          <div class="card card--id pinned" id="card-bio-id" data-pin-color="gold">
+            <div class="card-tape card-tape--top"></div>
+            <div class="id-info">
+              <p class="id-stamp">ACTIVE CASE</p>
+              <h3 class="id-name">Adam Steiner</h3>
+              <p class="id-role">Machine Learning Engineer<br/>"<mark id="hl-bio-role" class="reel-highlight">The Data Detective</mark>"</p>
+              <p class="id-text">I build agentic AI systems, NLP pipelines, and the MLOps plumbing that keeps them alive in production — currently at CoachScribe. Before that, I chased down railway disruptions and street‑level traffic patterns as a geospatial data scientist, and shipped tax‑tech and RAG products as a freelance engineer.</p>
+              <p class="id-text id-text--small">Native Hungarian, advanced English. MSc in Machine Learning for Data Science, Pázmány Péter Catholic University.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card--note pinned" id="card-bio-note" data-pin-color="red">
+          <p class="hand">"Every great product starts as an unsolved case."</p>
+        </div>
+      </section>
+
+      <!-- ============ EDUCATION ============ -->
+      <section class="cluster cluster--education" id="education" data-x="810" data-y="140" data-w="640" data-h="640">
+        <h2 class="cluster-label">Studies</h2>
+
+        <div class="card card--clipping pinned" id="card-edu-clipping" data-pin-color="navy">
+          <div class="card-tape card-tape--top card-tape--right"></div>
+          <h3 class="clipping-headline">Machine Learning Research, Honoured Twice</h3>
+          <p class="clipping-byline">Pázmány Péter Catholic University — Class of 2023</p>
+          <p class="clipping-body">Two Certificates of Excellence for Most Prominent Research Project, plus a research prize from Morgan Stanley's Open Banking competition (June 2022) — proof the thesis‑defence stakeouts paid off.</p>
+        </div>
+
+        <div class="card card--diploma pinned" id="card-edu-diploma" data-pin-color="gold">
+          <p class="diploma-title">Pázmány Péter Catholic University</p>
+          <p class="diploma-degree">MSc — Machine Learning for Data Science <span id="hl-edu-honours" class="diploma-honours reel-highlight">(English degree)</span></p>
+          <div class="diploma-grades">
+            <span class="grade-pill">2× Certificate of Excellence</span>
+            <span class="grade-pill">Morgan Stanley Open Banking Prize</span>
+          </div>
+          <p class="diploma-note">Feb 2021 – Feb 2023</p>
+        </div>
+
+        <div class="card card--cert pinned" id="card-edu-cert" data-pin-color="green">
+          <p class="cert-title">BSc — Software Engineering &amp; NLP</p>
+          <p class="cert-sub">Pázmány Péter Catholic University · Sept 2017 – Jan 2021 (Hungarian/English bilingual)</p>
+        </div>
+      </section>
+
+      <!-- ============ HIGHLIGHTS ============ -->
+      <section class="cluster cluster--arsenal" id="arsenal" data-x="60" data-y="140" data-w="660" data-h="600">
+        <h2 class="cluster-label">Highlights</h2>
+
+        <div class="card card--highlights pinned" id="card-bio-highlights" data-pin-color="green">
+          <p class="highlights-label">Case Highlights</p>
+          <ul class="highlights-list">
+            <li>Detected railway service disruptions at <strong id="hl-bio-stat" class="reel-highlight">98.5%</strong> accuracy via human‑in‑the‑loop NLP — +£20k ARR (ITO World).</li>
+            <li>Built a real‑time bus‑prioritisation system contributing <strong>£300k</strong> ARR for transport partners.</li>
+            <li>Architected an agentic AI framework for autonomous reasoning &amp; workflow orchestration (CoachScribe).</li>
+            <li>Led Taxually's EcoTax platform from prototype to a <strong>€135K ARR</strong> product.</li>
+            <li>Cut response time by <strong>75%</strong> and resolution time by <strong>80%</strong> building a company's first ops knowledge base.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="evidence-tag">Python</span>
+            <span class="evidence-tag">LLMs / RAG</span>
+            <span class="evidence-tag">PyTorch</span>
+            <span class="evidence-tag">AWS</span>
+            <span class="evidence-tag">Docker</span>
+            <span class="evidence-tag">SQL</span>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="cluster cluster--contact" id="contact" data-x="1540" data-y="140" data-w="420" data-h="600">
+        <h2 class="cluster-label">Contact &amp; CV</h2>
+
+        <div class="card card--contact pinned" id="card-contact-main" data-pin-color="red">
+          <div class="card-tape card-tape--top"></div>
+          <p class="contact-name">Adam Steiner</p>
+          <p class="contact-role">Machine Learning Engineer</p>
+          <p class="contact-line"><mark id="hl-contact-email" class="reel-highlight">steeadam@gmail.com</mark></p>
+          <p class="contact-line">+36 30 851 8267</p>
+          <p class="contact-line">Hungary</p>
+          <a class="cv-button" href="cv.pdf" download>Download CV — PDF</a>
+        </div>
+
+        <div class="rolodex pinned" id="card-contact-rolodex" data-pin-color="gold">
+          <a class="rolodex-tab rolodex-tab--1" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a class="rolodex-tab rolodex-tab--2" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="rolodex-tab rolodex-tab--3" href="mailto:steeadam@gmail.com">Email</a>
+        </div>
+      </section>
+
+      <!-- ============ EXPERIENCE ============ -->
+      <section class="cluster cluster--experience" id="experience" data-x="60" data-y="780" data-w="980" data-h="1500">
+        <h2 class="cluster-label">Field Reports</h2>
+
+        <div class="card card--report card--report-1 pinned exp-card" id="card-exp-1" data-pin-color="red"
+             data-case="003" data-status="ONGOING" data-title="Machine Learning Engineer"
+             data-company="CoachScribe" data-period="September 2025 — Present"
+             data-summary="Architected and led development of a scalable agentic AI framework, enabling autonomous reasoning, task execution, and workflow orchestration across the platform."
+             data-detail-1="Enhanced the MLOps pipeline with version control, structured logging, distributed tracing, and reliable backup mechanisms — improving robustness and reproducibility."
+             data-detail-2="Diagnosed and resolved critical ad‑hoc issues in production ML models, ensuring system stability and minimising downtime."
+             data-detail-3="Developed NLP pipelines using embedding‑based representations and LLMs to analyse, classify, and extract insight from unstructured text."
+             data-detail-4="Stack: Python, LLMs (OpenAI, LLaMA, Gemini, Claude), MLFlow, Docker, AWS.">
+          <p class="report-kicker">Case&nbsp;#003 — Ongoing</p>
+          <h3 class="report-title">Machine Learning Engineer</h3>
+          <p class="report-meta">CoachScribe · September 2025 — Present</p>
+          <ul class="report-list">
+            <li>Architected a scalable <em id="hl-exp-case" class="reel-highlight">agentic AI framework</em> for autonomous reasoning &amp; workflow orchestration.</li>
+            <li>Hardened the MLOps pipeline: versioning, structured logging, distributed tracing, backups.</li>
+            <li>Built LLM‑powered NLP pipelines for unstructured‑text analysis.</li>
+          </ul>
+          <p class="report-stamp report-stamp--open">ONGOING</p>
+          <p class="exp-hint">Click to open file ↗</p>
+        </div>
+
+        <div class="card card--report card--report-2 pinned exp-card" id="card-exp-2" data-pin-color="navy"
+             data-case="002" data-status="CLOSED" data-title="Geospatial Data Scientist"
+             data-company="ITO World" data-period="November 2024 — August 2025"
+             data-summary="Built AI systems detecting railway service disruptions and prioritising buses in real time, contributing over £320,000 in additional ARR."
+             data-detail-1="Developed an AI system detecting railway service disruptions from unstructured text at 98.5% accuracy via a human‑in‑the‑loop workflow — securing an additional £20,000 ARR from major clients."
+             data-detail-2="Built a real‑time bus‑prioritisation system adjusting traffic lights dynamically based on lateness, working with external transport partners — contributing £300,000 ARR and enhancing urban bus reliability."
+             data-detail-3="Prototyped and tested a system converting video feeds into 3D point clouds for service‑disruption detection, advancing the company's computer‑vision capability."
+             data-detail-4="Stack: Python, Computer Vision, NLP, time‑series data processing, real‑time pipelines.">
+          <div class="card-tape card-tape--top card-tape--right"></div>
+          <p class="report-kicker">Case&nbsp;#002 — Closed</p>
+          <h3 class="report-title">Geospatial Data Scientist</h3>
+          <p class="report-meta">ITO World · November 2024 — August 2025</p>
+          <ul class="report-list">
+            <li>Railway disruption detector — 98.5% accuracy, +£20k ARR.</li>
+            <li>Real‑time bus‑prioritisation system — +£300k ARR.</li>
+            <li>Prototyped a video‑to‑3D‑point‑cloud pipeline for disruption detection.</li>
+          </ul>
+          <p class="report-stamp report-stamp--closed">CLOSED</p>
+          <p class="exp-hint">Click to open file ↗</p>
+        </div>
+
+        <div class="card card--report card--report-3 pinned exp-card" id="card-exp-3" data-pin-color="green"
+             data-case="001" data-status="CLOSED" data-title="Engineer II"
+             data-company="Taxually" data-period="October 2023 — November 2024"
+             data-summary="Led end‑to‑end development of Taxually's EcoTax platform (€135K ARR) from prototype to scalable product."
+             data-detail-1="Owned onboarding, data processing, compliance, and billing for the EcoTax platform, delivering rapid MVPs for new regulations."
+             data-detail-2="Designed and implemented AI/ML initiatives, including a generative AI system for tax‑legislation tracking and notifications."
+             data-detail-3="Prototyped ML solutions and delivered AI training to non‑technical audiences."
+             data-detail-4="Stack: Python, Generative AI, SQL, AWS.">
+          <p class="report-kicker">Case&nbsp;#001 — Closed</p>
+          <h3 class="report-title">Engineer II</h3>
+          <p class="report-meta">Taxually · October 2023 — November 2024</p>
+          <ul class="report-list">
+            <li>Led the EcoTax platform end‑to‑end (€135K ARR).</li>
+            <li>Built a generative AI system for tax‑legislation tracking.</li>
+            <li>Delivered AI training sessions to non‑technical teams.</li>
+          </ul>
+          <p class="report-stamp report-stamp--closed">CLOSED</p>
+          <p class="exp-hint">Click to open file ↗</p>
+        </div>
+
+        <div class="card card--archive pinned" id="card-exp-archive-1" data-pin-color="gold">
+          <p class="report-kicker">Case Archive — Closed File</p>
+          <ul class="archive-list">
+            <li><strong>Technical Founder</strong> (Freelance) — GOF <span class="archive-period">· Sep 2023 – Aug 2025</span><br/>Designed a scalable AWS platform for pre‑match predictive analytics, with feature‑engineering pipelines and model validation (precision, recall, F1, AUC).</li>
+          </ul>
+        </div>
+
+        <div class="card card--archive pinned" id="card-exp-archive-2" data-pin-color="navy">
+          <p class="report-kicker">Case Archive — Closed File</p>
+          <ul class="archive-list">
+            <li><strong>AI Engineer</strong> (Freelance) — AccntMapper <span class="archive-period">· Jan 2025 – Jul 2025</span><br/>Prototyped a RAG‑powered B2B sales tool for intelligent document processing and semantic search over sales/financial documents.</li>
+          </ul>
+        </div>
+
+        <div class="card card--archive pinned" id="card-exp-archive-3" data-pin-color="green">
+          <p class="report-kicker">Case Archive — Closed File</p>
+          <ul class="archive-list">
+            <li><strong>Digital Operations Engineer</strong> — Taxually <span class="archive-period">· Jul 2022 – Oct 2023</span><br/>First hire on a new team; built a company‑wide knowledge base and tooling, cutting response time 75% and resolution time 80%.</li>
+          </ul>
+        </div>
+
+        <div class="card card--archive pinned" id="card-exp-archive-4" data-pin-color="red">
+          <p class="report-kicker">Case Archive — Closed File</p>
+          <ul class="archive-list">
+            <li><strong>Data Scientist Trainee</strong> — NNG <span class="archive-period">· Jun 2021 – Jul 2022</span><br/>Built ETL queries and researched regression models for device‑lifetime prediction; shipped reporting across 8 key business metrics.</li>
+          </ul>
+        </div>
+
+        <div class="card card--archive pinned" id="card-exp-archive-5" data-pin-color="gold">
+          <p class="report-kicker">Case Archive — Closed File</p>
+          <ul class="archive-list">
+            <li><strong>Software Developer Intern</strong> — EnCo Soft <span class="archive-period">· Jun 2020 – Oct 2020</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ PROJECTS ============ -->
+      <section class="cluster cluster--projects" id="projects" data-x="1130" data-y="1260" data-w="1020" data-h="850">
+        <h2 class="cluster-label">Open Cases</h2>
+
+        <div class="card card--folder card--folder-1 pinned" id="card-proj-1" data-pin-color="red">
+          <p class="folder-tab">Project Code: AI_TRAINING</p>
+          <p class="folder-desc">Hands‑on AI/ML training sessions for non‑technical teams — demystifying LLMs, RAG, and generative AI through practical, in‑house workshops.</p>
+          <div class="tag-row">
+            <span class="evidence-tag">LLMs</span>
+            <span class="evidence-tag">RAG</span>
+            <span class="evidence-tag">Workshops</span>
+          </div>
+          <div class="folder-actions">
+            <a class="folder-btn" href="#" target="_blank" rel="noopener">View Case →</a>
+            <a class="folder-btn folder-btn--ghost" href="#" target="_blank" rel="noopener">Source File</a>
+          </div>
+        </div>
+
+        <div class="card card--folder card--folder-2 pinned" id="card-proj-2" data-pin-color="gold">
+          <p class="folder-tab">Project Code: <mark id="hl-proj-name" class="reel-highlight">SCIVER</mark></p>
+          <p class="folder-desc">A scientific claim verifier that cross‑references claims against source literature using retrieval and LLM‑based reasoning to flag unsupported or contradicted statements.</p>
+          <div class="tag-row">
+            <span class="evidence-tag">NLP</span>
+            <span class="evidence-tag">RAG</span>
+            <span class="evidence-tag">LLMs</span>
+          </div>
+          <div class="folder-actions">
+            <a class="folder-btn" href="#" target="_blank" rel="noopener">View Case →</a>
+            <a class="folder-btn folder-btn--ghost" href="#" target="_blank" rel="noopener">Source File</a>
+          </div>
+        </div>
+
+        <div class="card card--folder card--folder-3 pinned" id="card-proj-3" data-pin-color="navy">
+          <p class="folder-tab">Project Code: SENSOR_FUSION</p>
+          <p class="folder-desc">Fused multi‑sensor LiDAR data into unified 3D point clouds for spatial awareness and object‑detection experiments.</p>
+          <div class="tag-row">
+            <span class="evidence-tag">LiDAR</span>
+            <span class="evidence-tag">Point Clouds</span>
+            <span class="evidence-tag">Python</span>
+          </div>
+          <div class="folder-actions">
+            <a class="folder-btn" href="#" target="_blank" rel="noopener">View Case →</a>
+            <a class="folder-btn folder-btn--ghost" href="#" target="_blank" rel="noopener">Source File</a>
+          </div>
+        </div>
+
+        <div class="card card--folder card--folder-4 pinned" id="card-proj-4" data-pin-color="green">
+          <p class="folder-tab">Project Code: EMOTION_ID</p>
+          <p class="folder-desc">A computer‑vision model that classifies human emotional states from facial expressions in real time.</p>
+          <div class="tag-row">
+            <span class="evidence-tag">Computer Vision</span>
+            <span class="evidence-tag">PyTorch</span>
+            <span class="evidence-tag">OpenCV</span>
+          </div>
+          <div class="folder-actions">
+            <a class="folder-btn" href="#" target="_blank" rel="noopener">View Case →</a>
+            <a class="folder-btn folder-btn--ghost" href="#" target="_blank" rel="noopener">Source File</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ RECOMMENDATIONS ============ -->
+      <section class="cluster cluster--recommendations" id="recommendations" data-x="2240" data-y="140" data-w="620" data-h="900">
+        <h2 class="cluster-label">Witness Statements</h2>
+
+        <div class="card card--testimony pinned" id="card-rec-1" data-pin-color="red">
+          <p class="testimony-quote">"Saul has an almost alarming ability to look at a tangled codebase and immediately identify the three things that are on fire. He rebuilt our dashboard in six weeks. Six. <mark id="hl-rec-quote" class="reel-highlight">The team wanted to give him a badge.</mark>"</p>
+          <div class="testimony-witness">
+            <div class="witness-avatar witness-avatar--a">MK</div>
+            <div>
+              <p class="witness-name">Marcus K.</p>
+              <p class="witness-role">Engineering Manager · Cyber Intelligence Division</p>
+            </div>
+          </div>
+          <p class="testimony-stamp">VERIFIED</p>
+        </div>
+
+        <div class="card card--testimony pinned" id="card-rec-2" data-pin-color="navy">
+          <p class="testimony-quote">"Working with Saul on CIPHER_KIT was genuinely delightful. He turns abstract requirements into real, ship-able code fast — and the component library he built is still in production two years later. Highly reliable."</p>
+          <div class="testimony-witness">
+            <div class="witness-avatar witness-avatar--b">AL</div>
+            <div>
+              <p class="witness-name">Aria L.</p>
+              <p class="witness-role">Lead Designer · Pixel &amp; Co. Studio</p>
+            </div>
+          </div>
+          <p class="testimony-stamp">VERIFIED</p>
+        </div>
+
+        <div class="card card--testimony pinned" id="card-rec-3" data-pin-color="gold">
+          <p class="testimony-quote">"Saul was the first developer I ever saw fix a production bug, write a post-mortem, and crack a joke about it — in the same Slack thread. One of those rare engineers who is both technically excellent and genuinely good to have around."</p>
+          <div class="testimony-witness">
+            <div class="witness-avatar witness-avatar--c">JR</div>
+            <div>
+              <p class="witness-name">James R.</p>
+              <p class="witness-role">CTO · Startup Sleuths Inc.</p>
+            </div>
+          </div>
+          <p class="testimony-stamp">VERIFIED</p>
+        </div>
+
+        <div class="card card--note card--note-rec pinned" id="card-rec-note" data-pin-color="green">
+          <p class="hand">"Always ships. Always explains why."</p>
+        </div>
+      </section>
+
+      <!-- SVG threads rendered ON TOP of all cards -->
+      <svg class="threads" id="threads" aria-hidden="true"></svg>
+
+    </div><!-- /board -->
+  </main>
+
+  <!-- ============ FOLDER MODAL ============ -->
+  <div class="folder-modal" id="folderModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Case file detail">
+    <div class="folder-modal__backdrop" id="folderBackdrop"></div>
+    <div class="folder-modal__scene">
+      <div class="folder-modal__back"></div>
+      <div class="folder-modal__flap" id="folderFlap">
+        <div class="folder-modal__flap-inner"></div>
+      </div>
+      <div class="folder-modal__body" id="folderBody">
+        <button class="folder-modal__close" id="folderClose" aria-label="Close file">✕ CLOSE FILE</button>
+        <div class="folder-modal__header">
+          <span class="folder-modal__case" id="fmCase"></span>
+          <span class="folder-modal__status" id="fmStatus"></span>
+        </div>
+        <h2 class="folder-modal__title" id="fmTitle"></h2>
+        <p class="folder-modal__meta" id="fmMeta"></p>
+        <hr class="folder-modal__rule"/>
+        <p class="folder-modal__summary" id="fmSummary"></p>
+        <ul class="folder-modal__details" id="fmDetails"></ul>
+      </div>
+    </div>
+  </div>
+
+  <p class="zoom-hint" id="zoomHint">Click a section to zoom in · <kbd>Esc</kbd> or "Full board" to zoom out</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
